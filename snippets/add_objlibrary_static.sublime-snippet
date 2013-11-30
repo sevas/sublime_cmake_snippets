@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[add_library(${1:name} STATIC
+            \$<TARGET_OBJECTS:${2:objlib}>
+            \$\{${3:SOURCE_FILE_LIST}\})$0]]></content>
+    <tabTrigger>addobjstatic</tabTrigger>
+    <scope>source.cmake</scope>
+    <description><![CDATA[CMake: add_library(STATIC $<TARGET_OBJECTS:objlib> ...)]]></description>
+</snippet>

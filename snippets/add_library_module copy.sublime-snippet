@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[add_library(${1:name} MODULE
+            \$\{${2:SOURCE_FILE_LIST}\})$0]]></content>
+    <tabTrigger>addmodule</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_library(MODULE ...)</description>
+</snippet>
+
+

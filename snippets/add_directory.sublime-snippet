@@ -1,0 +1,7 @@
+
+<snippet>
+    <content><![CDATA[add_subdirectory(${1:source_dir})$0]]></content>
+    <tabTrigger>addsub</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_subdirectory(...)</description>
+</snippet>

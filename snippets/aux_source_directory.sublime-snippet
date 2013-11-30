@@ -1,0 +1,8 @@
+
+<snippet>
+    <content><![CDATA[aux_source_directory(${1:source_dir} ${2:VAR})$0]]></content>
+    <tabTrigger>aux</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: aux_source_directory(...)</description>
+</snippet>
+

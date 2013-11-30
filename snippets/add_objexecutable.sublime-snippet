@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[add_executable(${1:name}
+        \$<TARGET_OBJECTS:${2:objlib}>
+        \$\{${3:SOURCE_FILE_LIST}\})$0]]></content>
+    <tabTrigger>addobjex</tabTrigger>
+    <scope>source.cmake</scope>
+    <description><![CDATA[CMake: add_executable(... $<TARGET_OBJECTS:objlib> ...)]]></description>
+</snippet>
+

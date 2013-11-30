@@ -1,0 +1,10 @@
+
+<snippet>
+    <content><![CDATA[build_command(${1:VAR}
+    CONFIGURATION ${2:RELEASE}
+    PROJECT_NAME ${3:projname}
+    TARGET ${4:target})$0]]></content>
+    <tabTrigger>build</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: build_command(...)</description>
+</snippet>

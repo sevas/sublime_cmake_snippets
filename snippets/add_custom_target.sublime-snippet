@@ -1,0 +1,11 @@
+
+<snippet>
+    <content><![CDATA[add_custom_target(${1:name}
+    "${2:command1}" ${3:args1} ${4:args2}
+    WORKING_DIRECTORY "${5:dir}"
+    COMMENT "${6:comment}"
+    SOURCES \$\{${7:SOURCE_FILES}\})$0]]></content>
+    <tabTrigger>addct</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_custom_target(name SOURCES ...)</description>
+</snippet>

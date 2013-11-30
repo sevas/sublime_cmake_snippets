@@ -1,0 +1,8 @@
+
+<snippet>
+    <content><![CDATA[add_test(${1:testname} "${2:Exename}" ${3:arg1})$0]]></content>
+    <tabTrigger>addt</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_test(...)</description>
+</snippet>
+

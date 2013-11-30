@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[add_library(${1:name} MODULE
+            \$<TARGET_OBJECTS:${2:objlib}>
+            \$\{${3:SOURCE_FILE_LIST}\})$0]]></content>
+    <tabTrigger>addobjmodule</tabTrigger>
+    <scope>source.cmake</scope>
+    <description><![CDATA[CMake: add_library(MODULE $<TARGET_OBJECTS:objlib> ...)]]></description>
+</snippet>
+
+

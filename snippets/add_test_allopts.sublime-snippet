@@ -1,0 +1,10 @@
+
+<snippet>
+    <content><![CDATA[add_test(NAME ${1:testname} CONFIGURATIONS ${2:"Debug;Release;..."}
+        WORKING_DIRECTORY "${3:dir}"
+        COMMAND "${4:command}" ${5:arg1})$0]]></content>
+    <tabTrigger>addtetstall</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_test(NAME ... COMMAND ...)</description>
+</snippet>
+
