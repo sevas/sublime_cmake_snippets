@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[install(DIRECTORY "${1:src/}" DESTINATION "${2:include/myproj}"
+        FILE_PERMISSIONS ${3:permissions}
+        DIRECTORY_PERMISSIONS ${4:permissions}
+        ${5:USE_SOURCE_PERMISSIONS}
+        ${6:OPTIONAL}
+        CONFIGURATIONS ${7:Debug|Release|...}
+        COMPONENT ${8:component}
+        FILES_MATCHING ${9:PATTERN "*.h" | REGEX ".*\.h"}
+        ${10:EXCLUDE} PERMISSIONS ${11:permissions})$0]]></content>
+    <tabTrigger>instdall</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: install(DIRECTORY ...)</description>
+</snippet>

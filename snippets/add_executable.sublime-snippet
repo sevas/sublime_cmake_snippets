@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[add_executable(${1:name} \$\{${2:SOURCE_FILE_LIST}\})$0]]></content>
+    <tabTrigger>addex</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_executable(...)</description>
+</snippet>
+

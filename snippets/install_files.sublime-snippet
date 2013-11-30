@@ -1,0 +1,8 @@
+
+<snippet>
+    <content><![CDATA[install(FILES \$\{${1:FILE_LIST}\} DESTINATION "${2:path/to/dest}")$0]]></content>
+    <tabTrigger>instf</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: install(FILES ...)</description>
+</snippet>
+

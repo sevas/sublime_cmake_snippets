@@ -1,0 +1,15 @@
+
+<snippet>
+    <content><![CDATA[install(FILES \$\{${1:FILE_LIST}\} DESTINATION "${2:path/to/dest}")
+        PERMISSIONS ${3:permissions}
+        CONFIGURATIONS ${4:Debug|Release|...}
+        COMPONENT ${5:component}
+        RENAME ${6:name})$0]]></content>
+    <tabTrigger>instfall</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: install(FILES ...)</description>
+</snippet>
+
+PERMISSIONS ${6:OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ}
+        CONFIGURATIONS ${7:Debug|Release|...}
+        COMPONENT ${8:component}

@@ -1,0 +1,9 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[file(GLOB${1:_RECURSE} ${2:VAR} "${3:src/*.cc}")]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>glob</tabTrigger>
+  <description>CMake: file(GLOB ...)</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.cmake</scope>
+</snippet>

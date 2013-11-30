@@ -1,0 +1,8 @@
+
+<snippet>
+    <content><![CDATA[install(DIRECTORY "${1:src/}" DESTINATION "${2:include/myproj}"
+          FILES_MATCHING PATTERN "${3:*.h}")$0]]></content>
+    <tabTrigger>instd</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: install(DIRECTORY ...)</description>
+</snippet>

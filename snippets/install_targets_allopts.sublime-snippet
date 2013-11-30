@@ -1,0 +1,17 @@
+
+<snippet>
+    <content><![CDATA[install(TARGETS ${1:targets} EXPORT ${2:export-name}
+        ${3:ARCHIVE|LIBRARY|RUNTIME|FRAMEWORK|BUNDLE|PRIVATE_HEADER|PUBLIC_HEADER|RESOURCE}
+        DESTINATION ${4:"path/to/dest"}
+        INCLUDES DESTINATION ${5:"path/to/dest" "path/to/dest2"}
+        PERMISSIONS ${6:permissions}
+        CONFIGURATIONS ${7:Debug|Release|...}
+        COMPONENT ${8:component}
+        ${9:OPTIONAL}
+        ${10:NAMELINK_ONLY|NAMELINK_SKIP})$0]]></content>
+    <tabTrigger>instpall</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: install(TARGETS ...) [all options]</description>
+</snippet>
+
+
