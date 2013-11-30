@@ -1,0 +1,10 @@
+{
+    "scope": "source.cmake",
+    "completions":
+    [
+
+        { "trigger": "permissions", "contents": "${1:OWNER_EXECUTE} ${2:OWNER_WRITE} ${3:OWNER_READ} ${4:GROUP_EXECUTE} ${5:GROUP_READ} ${6:GROUP_WRITE} ${7:WORLD_READ} ${8:WORLD_WRITE} ${9:WORLD_EXECUTE} ${10:SETUID} ${11:SETGID}"}
+
+
+    ]
+}
