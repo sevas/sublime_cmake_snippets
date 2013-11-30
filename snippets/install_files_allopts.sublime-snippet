@@ -9,7 +9,3 @@
     <scope>source.cmake</scope>
     <description>CMake: install(FILES ...)</description>
 </snippet>
-
-PERMISSIONS ${6:OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ}
-        CONFIGURATIONS ${7:Debug|Release|...}
-        COMPONENT ${8:component}
