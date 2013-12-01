@@ -11,7 +11,7 @@ This is a collection of snippets for the CMake commands and variables.
 
 This package does not handle syntax highlighting. For this purpose, I rely on [this package](https://github.com/jcowgar/CMake-Sublime-Package) at the moment. You will need to install it as well to register the CMake file type in Sublime Text.
 
-This is not a fully-featured completion engine for the CMake language. This means that you cannot move the cursor inside an already existing CMake command, hit <kbd>CTRL</kbd> <kbd>TAB</kbd> and get relevant suggestions. 
+This is not a fully-featured completion engine for the CMake language. This means that you cannot move the cursor inside an already existing CMake command, hit <kbd>CTRL</kbd> <kbd>Tab</kbd> and get relevant suggestions. 
 
 I can sense your disapointment. I feel the same.
 
@@ -33,20 +33,14 @@ I can sense your disapointment. I feel the same.
 
 ## Installation
 
-1. Install Sublime Package Control
-2. From inside Sublime Text 2, open Package Control's Command Pallet: CTRL SHIFT P (Windows, Linux) or CMD SHIFT P on Mac.
-3. Type install package and hit Return. A list of available packages will be displayed.
-4. Type CmakeSnippets and hit Return. The package will be downloaded to the appropriate directory.
-5. Restart Sublime Text 2 to complete installation. Open a Markdown file and this custom theme. The features listed above should now be available.
+The recommended way is to use Package control, once I get the pull request accepted. 
 
-Package control or copy to <STROOT>/Packages
-
-But probably package control.
+Until then, clone
 
 
 ## Usage
 
-From whithin a CMake script (e.g. a file named *CMakeLists.txt* or any file with a *.cmake* extension), when you start typing the snippet string, the completion popup list should appear. Hit <kbd>CTRL</kbd><kbd>TAB</kbd> if it doesn't. Select the entry you want in the list and hit <kbd>TAB</kbd>to expand it. 
+From whithin a CMake script (e.g. a file named *CMakeLists.txt* or any file with a *.cmake* extension), when you start typing the snippet string, the completion popup list should appear. Hit <kbd>CTRL</kbd> <kbd>Tab</kbd> if it doesn't. Select the entry you want in the list and hit <kbd>Tab</kbd> to expand it. 
 
 Most snippet strings start the same way as the associated CMake command, and follow a loosely defined naming convention, which involves the first characters of the following words in the command. 
 
@@ -95,7 +89,7 @@ Even if CMake does not enforce this style, I find the following structure:
     add_executable(Hello ${Hello_SOURCE_FILES})
 ```
 
-to be preferable to:
+preferable to:
 
 ```CMake
     add_executable(Hello src/foo.cpp src/bar.cpp src/baz.cpp)
@@ -112,7 +106,13 @@ All the snippets follow that rule.
 
 ### Variable arguments
 
-When a snippet presents you two parameter placeholders prefilled with a name like ``PARAM item1 item2``, it means this parameter accepts a variable number of arguments. The first two are laid out, add whatever you need
+When a snippet presents you two parameter placeholders prefilled with a name like:
+
+```CMake
+    list(APPEND LIST_VARIABLE item1 item2)
+``` 
+
+it means this parameter accepts a variable number of arguments. The first two are laid out, add whatever you need.
 
 Choices between incompatible parameters are either indicated by 
 
@@ -126,4 +126,4 @@ The MIT license. See LICENSE.txt.
 
 ## Acknowledgements
 
-Many thanks to the author and contributors of the [InsertNums](https://github.com/jbrooksuk/InsertNums) package. 
+Many thanks to the author and contributors of the [InsertNums](https://github.com/jbrooksuk/InsertNums) package. I couldn't have done this without you.
