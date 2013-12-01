@@ -5,6 +5,6 @@
    <tabTrigger>fileginput</tabTrigger>
     <description>CMake: file(GENERATE ...)</description>
     <scope>source.cmake</scope>
-</snippet>>
+</snippet>
 
 

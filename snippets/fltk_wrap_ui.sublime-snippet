@@ -3,6 +3,6 @@
    <tabTrigger>fltk</tabTrigger>
     <description>CMake: fltk_wrap_ui(...)</description>
     <scope>source.cmake</scope>
-</snippet>>
+</snippet>
 
 
