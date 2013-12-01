@@ -1,0 +1,7 @@
+
+<snippet>
+    <content><![CDATA[enable_language(C${1:XX} ${2:Fortran})$0]]></content>
+    <tabTrigger>enablelang</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: cmake_minimum_required(VERSION ...)</description>
+</snippet>

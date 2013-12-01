@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[export(TARGETS ${1:target1} ${2:target2}
+    NAMESPACE ${3:namespace}
+    ${4:APPEND} FILE "${5:filename}"
+    ${6:EXPORT_LINK_INTERFACE_LIBRARIES})$0]]></content>
+  <tabTrigger>exp</tabTrigger>
+  <description>CMake: export(TARGETS ...)</description>
+  <scope>source.cmake</scope>
+</snippet>

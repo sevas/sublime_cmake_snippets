@@ -1,0 +1,9 @@
+
+<snippet>
+    <content><![CDATA[configure_file("${1:input}" "${2:output}"
+     ${3:ESCAPE_QUOTES} ${4:@ONLY}
+     NEWLINE_STYLE ${5:UNIX}${6: DOS}${7: WIN32}${8: LF}${9: CRLF})$0]]></content>
+    <tabTrigger>confeol</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: configure_file(...)</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[execute_process(COMMAND "${1:cmd1}" ${2:args1}
+    WORKING_DIRECTORY "${3:directory}"
+    TIMEOUT ${4:seconds}
+    RESULT_VARIABLE ${5:variable}_RESULT
+    OUTPUT_VARIABLE ${5:variable}_OUTPUT
+    ERROR_VARIABLE ${5:variable}_ERROR)$0]]></content>
+    <tabTrigger>execp</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: execute_process(COMMAND ...)</description>
+</snippet>
