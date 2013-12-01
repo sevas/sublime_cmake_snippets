@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[VS_GLOBAL_SECTION_POST_${1:section}$0]]></content>
+    <tabTrigger>VS_GLOBAL_SECTION_POST_</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake prop: "VS_GLOBAL_SECTION_POST_[section]",</description>
+</snippet>

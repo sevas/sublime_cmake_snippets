@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[string(REPLACE "${1:match_string}" ${2:replace_string} ${3:RESULT_VARIABLE} ${4:input1} ${5:input2})$0]]></content>
+    <tabTrigger>stringrepl</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: string(REPLACE)</description>
+</snippet>

@@ -1,9 +1,9 @@
 
 <snippet>
     <content><![CDATA[add_custom_command(TARGET ${1:targetname} ${2:PRE_BUILD} ${3:| PRE_LINK} ${4:| POST_BUILD}
-        COMMAND "${5:command}" ARGS ${6:arg1}
-        WORKING_DIRECTORY "${7:dir}"
-        COMMENT "${8:comment}")$0]]></content>
+        COMMAND "${5:command}" ARGS ${6:arg1} ${7:arg2}
+        WORKING_DIRECTORY "${8:dir}"
+        COMMENT "${9:comment}")$0]]></content>
     <tabTrigger>addcct</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: add_custom_command(TARGET)</description>

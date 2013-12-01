@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[target_compile_options(${1:target} ${2:BEFORE}
+    ${3:INTERFACE}${4:|PUBLIC}${5:|PRIVATE} ${6:items1}
+    ${7:INTERFACE}${8:|PUBLIC}${9:|PRIVATE} ${10:items2})$0]]></content>
+    <tabTrigger>targetc</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: target_compile_options(...)</description>
+</snippet>

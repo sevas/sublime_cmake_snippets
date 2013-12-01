@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[load_command(${1:COMMAND_NAME} "${2:location1}" "${3:location1}")$0]]></content>
+    <tabTrigger>loadcommand</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: load_command(COMMAND_NAME ...)</description>
+</snippet>

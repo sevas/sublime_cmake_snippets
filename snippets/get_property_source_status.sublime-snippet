@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[get_property(${1:RESULT_VARIABLE} SOURCE ${2:source}
+    PROPERTY ${3:property_name}
+    ${4:SET} ${5:| DEFINED} ${6:| BRIEF_DOCS} ${7:| FULL_DOCS})$0]]></content>
+    <tabTrigger>getpropsst</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: get_property(SOURCE prop status)</description>
+</snippet>

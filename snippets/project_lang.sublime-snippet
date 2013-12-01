@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[project(${1:projectname} ${2:language1} ${3:language2})$0]]></content>
+    <tabTrigger>projl</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: project(name ...)</description>
+</snippet>

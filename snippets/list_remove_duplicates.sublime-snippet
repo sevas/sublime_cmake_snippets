@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[list(REMOVE_DUPLICATES ${1:LIST_VARIABLE})$0]]></content>
+    <tabTrigger>listremdup</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: list(REMOVE_DUPLICATES)</description>
+</snippet>

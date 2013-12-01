@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[set_property(DIRECTORY "${1:dir}"
+    ${2:APPEND}${3:|APPEND_STRING}
+    PROPERTY ${4:property_name} ${5:value1} ${6:value2})$0]]></content>
+    <tabTrigger>setpropd</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: set_property(DIRECTORY)</description>
+</snippet>

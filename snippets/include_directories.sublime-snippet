@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[include_directories(
+    \$\{${1:pkg1}_INCLUDE_DIRS\}
+    \$\{${2:pkg2}_INCLUDE_DIRS\})$0]]></content>
+    <tabTrigger>incd</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: include_directories(...)</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[get_source_file_property(${1:RESULT_VARIABLE} "${2:source_file}" ${3:property_name})$0]]></content>
+    <tabTrigger>getsfp</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: get_source_file_property()</description>
+</snippet>

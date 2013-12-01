@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[set_property(GLOBAL
+    ${1:APPEND}${2:|APPEND_STRING}
+    PROPERTY ${3:property_name} ${4:value1} ${5:value2})$0]]></content>
+    <tabTrigger>setpropg</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: set_property(GLOBAL)</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[get_property(${1:RESULT_VARIABLE} TARGET ${2:target}
+    PROPERTY ${3:property_name}
+    ${4:SET} ${5:| DEFINED} ${6:| BRIEF_DOCS} ${7:| FULL_DOCS})$0]]></content>
+    <tabTrigger>getproptarst</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: get_property(TARGET prop status)</description>
+</snippet>

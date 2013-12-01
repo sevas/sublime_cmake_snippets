@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[get_property(${1:RESULT_VARIABLE} TEST ${2:test}
+    PROPERTY ${3:property_name}
+    ${4:SET} ${5:| DEFINED} ${6:| BRIEF_DOCS} ${7:| FULL_DOCS})$0]]></content>
+    <tabTrigger>getproptestst</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: get_property(TEST prop status)</description>
+</snippet>
+

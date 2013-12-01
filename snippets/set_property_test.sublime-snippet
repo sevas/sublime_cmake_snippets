@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[set_property(TEST ${1:test1} ${2:test2}
+    ${3:APPEND}${4:|APPEND_STRING}
+    PROPERTY ${5:property_name} ${6:value1} ${7:value2})$0]]></content>
+    <tabTrigger>setproptest</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: set_property(TEST)</description>
+</snippet>

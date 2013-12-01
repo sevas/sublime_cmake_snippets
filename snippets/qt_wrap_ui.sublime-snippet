@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[qt_wrap_ui(${1:resulting_lib_name} ${2:DEST_HEADER_LIST} ${3:DEST_SOURCE_LIST}
+    \$\{${4:IN_SOURCE_UI_LIST1}\}
+    \$\{${5:IN_SOURCE_UI_LIST2}\})$0]]></content>
+    <tabTrigger>qtui</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: qt_wrap_ui(...)</description>
+</snippet>

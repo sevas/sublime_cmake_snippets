@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[set(${1:VAR} ${2:value})]]></content>
+    <content><![CDATA[set(${1:VAR} ${2:value})$0]]></content>
     <tabTrigger>set</tabTrigger>
     <scope>source.cmake</scope>
-    <description>CMake: set(VAR ...)</description>
+    <description>CMake: set(VAR value)</description>
 </snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[string(CONFIGURE ${1:input_string} ${2:RESULT_VARIABLE} ${3:@ONLY} ${4:ESCAPE_QUOTES})$0]]></content>
+    <tabTrigger>stringconfigure</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: string(CONFIGURE)</description>
+</snippet>

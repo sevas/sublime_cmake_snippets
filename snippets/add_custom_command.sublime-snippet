@@ -1,9 +1,8 @@
-
 <snippet>
     <content><![CDATA[add_custom_command(OUTPUT ${1:output}
-        COMMAND "${2:command}" ARGS ${3:arg1}
-        WORKING_DIRECTORY "${4:dir}"
-        COMMENT "${5:comment}")$0]]></content>
+        COMMAND "${2:command}" ARGS ${3:arg1} ${4:arg2}
+        WORKING_DIRECTORY "${5:dir}"
+        COMMENT "${6:comment}")$0]]></content>
     <tabTrigger>addcc</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: add_custom_command(OUTPUT)</description>

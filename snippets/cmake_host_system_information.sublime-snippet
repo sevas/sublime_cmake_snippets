@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[cmake_host_system_information(RESULT ${1:RESULT_VARIABLE} QUERY ${2:key})$0]]></content>
+    <tabTrigger>cmakehost</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: cmake_host_system_information(RESULT ... QUERY ...)</description>
+</snippet>

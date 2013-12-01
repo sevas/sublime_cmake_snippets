@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[set_property(SOURCE ${1:source1} ${2:source2}
+    ${3:APPEND}${4:|APPEND_STRING}
+    PROPERTY ${5:property_name} ${6:value1} ${7:value2})$0]]></content>
+    <tabTrigger>setprops</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: set_property(SOURCE)</description>
+</snippet>

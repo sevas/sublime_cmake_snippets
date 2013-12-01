@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[try_run(${1:RUN_RESULT_VAR} ${2:COMPILE_RESULT_VAR}
+    ${3:bindir} ${4:source_file}
+    CMAKE_FLAGS ${5:flags} COMPILE_DEFINITIONS ${6:definitions}
+    COMPILE_OUTPUT_VARIABLE ${7:run_name}_COMPILE_OUTPUT
+    RUN_OUTPUT_VARIABLE ${8:run_name}_RUN_OUTPUT
+    ARGS ${9:"arg1"} ${10:"arg2"})$0]]></content>
+    <tabTrigger>tryrun</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: try_run(src_file)</description>
+</snippet>

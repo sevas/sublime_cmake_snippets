@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[link_directories(
+    "${1:dir1}"
+    "${2:dir2}")$0]]></content>
+    <tabTrigger>link</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: link_directories(dir)</description>
+</snippet>

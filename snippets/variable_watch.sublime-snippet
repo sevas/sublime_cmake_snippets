@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[variable_watch(${1:VARIABLE} ${2:command_name})$0]]></content>
+    <tabTrigger>varwatch</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: variable_watch(VAR)</description>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[string(REGEX MATCH "${1:regex}" ${2:RESULT_VARIABLE} ${3:input1} ${4:input2})$0]]></content>
+    <tabTrigger>stringrem</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: string(REGEX MATCH)</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[include_directories(
+    ${1:AFTER} ${2:BEFORE}
+    ${3:SYSTEM}
+    "${4:inc_dir1}"
+    "${5:inc_dir2}")$0]]></content>
+    <tabTrigger>incdall</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: include_directories(AFTER|BEFORE)</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[set_test_properties(${1:test1} ${2:test2}
+    PROPERTIES
+    ${3:prop1} ${4:value1}
+    ${5:prop2} ${6:value2})$0]]></content>
+    <tabTrigger>settestp</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: set_test_properties(tests)</description>
+</snippet>
