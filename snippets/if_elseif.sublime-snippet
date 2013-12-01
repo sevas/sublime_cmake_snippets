@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[if(${1:condition})
 	$0
-else()
+elseif(${2:condition})
 
 endif()]]></content>
     <tabTrigger>ifelse</tabTrigger>
     <scope>source.cmake</scope>
-    <description>CMake: if() ... else()</description>
+    <description>CMake: if() ... elseif()</description>
 </snippet>

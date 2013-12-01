@@ -1,8 +1,0 @@
-
-<snippet>
-    <content><![CDATA[cmake_minimum_required(VERSION ${1:major}${2:.minor}${3:.patch}${4:.tweak}
-    ${5:FATAL_ERROR})$0]]></content>
-    <tabTrigger>cmakemin</tabTrigger>
-    <scope>source.cmake</scope>
-    <description>CMake: cmake_minimum_required(VERSION ...)</description>
-</snippet>

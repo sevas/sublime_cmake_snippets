@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[while(${1:condition})
+    $0
+endwhile(${1:condition})]]></content>
+    <tabTrigger>while</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: while(cond) ... endwhile(cond)</description>
+</snippet>
