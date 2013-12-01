@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[fltk_wrap_ui(${1:resultingLibraryName} \$\{${2:SOURCE_FILES}\})$0]]></content>
+   <tabTrigger>fltk</tabTrigger>
+    <description>CMake: fltk_wrap_ui(...)</description>
+    <scope>source.cmake</scope>
+</snippet>>
+
+
