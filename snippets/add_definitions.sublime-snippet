@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[add_definitions(-D${1:FOO} -D${2:BAR})$0]]></content>
+    <tabTrigger>adddef</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: add_definitions(...)</description>
+</snippet>
