@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[find_package(${1:package} ${2:version} ${3:EXACT} ${4:QUIET}
+    ${3:REQUIRED} COMPONENTS ${4:components}
+    OPTIONAL_COMPONENTS ${5:components}
+    ${6:NO_POLICY_SCOPE})$0]]></content>
+    <tabTrigger>findpc</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: find_package(package ... COMPONENTS ...)</description>
+</snippet>

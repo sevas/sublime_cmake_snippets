@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[find_library(${1:RESULT_VARIABLE}
+    NAMES "${2:name1}" "${3:name2}" ${4:NAMES_PER_DIR}
+    ${5:HINTS} "${6:path1}" "${7:path2}" ENV ${8:VAR}
+    ${9:PATHS} "${10:path1}" "${11:path2}" ENV ${12:VAR}
+    ${13:PATH_SUFFIXES} "${14:suffix1}" "${15:suffix2}"
+    ${16:DOC} "${17:cache documentation string}"
+    ${18:NO_DEFAULT_PATH}
+    ${19:NO_CMAKE_ENVIRONMENT_PATH}
+    ${20:NO_CMAKE_PATH}
+    ${21:NO_SYSTEM_ENVIRONMENT_PATH}
+    ${22:NO_CMAKE_SYSTEM_PATH}
+    ${23:CMAKE_FIND_ROOT_PATH_BOTH} ${24:| ONLY_CMAKE_FIND_ROOT_PATH }${25:| NO_CMAKE_FIND_ROOT_PATH})$0]]></content>
+    <tabTrigger>findliball</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: find_library(...)</description>
+</snippet>

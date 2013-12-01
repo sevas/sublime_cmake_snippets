@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[find_path(${1:RESULT_VARIABLE} NAMES ${2:name1} ${3:name2} PATHS ${4:path1} ${5:path2} ${6:CMAKE_ROOT_PATH_BOTH})$0]]></content>
+    <tabTrigger>findpath</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: find_path(NAMES ... PATHS)</description>
+</snippet>

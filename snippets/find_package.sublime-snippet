@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[find_package(${1:package} ${2:QUIET} ${3:REQUIRED})$0]]></content>
+    <tabTrigger>findp</tabTrigger>
+    <scope>source.cmake</scope>
+    <description>CMake: find_package(package)</description>
+</snippet>
