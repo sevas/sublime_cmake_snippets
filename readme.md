@@ -33,9 +33,22 @@ I can sense your disapointment. I feel the same.
 
 ## Installation
 
-The recommended way is to use Package control, once I get the pull request accepted. 
+The recommended way is to use [Package Control][wbond], once I get the pull request accepted. 
 
-Until then, clone
+Until then, download or clone this repository on your system in a directory called ``CMakeSnippets``, in the Sublime Text Packages directory for your platform:
+
+- Mac: ``hg clone https://bitbucket.org/sevas/sublime_cmake_snippets ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/CMakeSnippets``
+- Windows: ``hg clone https://bitbucket.org/sevas/sublime_cmake_snippets %APPDATA%\Sublime/ Text/ 2/\CMakeSnippets``
+- Linux: ``hg clone https://bitbucket.org/sevas/sublime_cmake_snippets ~/.Sublime\ Text\ 2/Packages/CMakeSnippets``
+
+This repository is mirrored on github, so you can also use git, if you are into that kind of things (here for Sublime Text 3):
+
+- Mac: ``git clone https://github.com/sevas/sublime_cmake_snippets.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CMakeSnippets``
+- Windows: ``git clone https://github.com/sevas/sublime_cmake_snippets.git %APPDATA%\Sublime/ Text/ 3/\User\CMakeSnippets``
+- Linux: ``git clone https://github.com/sevas/sublime_cmake_snippets.git ~/.Sublime\ Text\ 3/Packages/User/CMakeSnippets``
+
+
+Restart Sublime Text and open a CMake script.
 
 
 ## Usage
@@ -51,7 +64,7 @@ For instance:
 - **get**\_**f**ilename\_**c**omponent(**P**ATH) becomes _**getfcp**_
 
 They are not all that intuitive, but I think they are pretty okay.
-The main problem comes from the limited width of Sublime Text's suggestion box. Snippet strings have to stay quite small so there is space for the description string.
+The main problem comes from the limited width of Sublime Text 2's suggestion box. Snippet strings have to stay quite small so there is space for the description string. Sublime Text 3, however, seems to adapt the size to the content.
 
 A complete list of snippets is available from the Command Palette. Open the palette, type ``CMake`` to filter the CMake snippets, and type the beginning of a command to filter out only the snippets for that command. 
 
@@ -106,24 +119,31 @@ All the snippets follow that rule.
 
 ### Variable arguments
 
-When a snippet presents you two parameter placeholders prefilled with a name like:
+When a snippet presents you two parameter placeholders prefilled with a name with index, like:
 
 ```CMake
     list(APPEND LIST_VARIABLE item1 item2)
-``` 
+```
 
 it means this parameter accepts a variable number of arguments. The first two are laid out, add whatever you need.
 
 Choices between incompatible parameters are either indicated by 
 
-- listing all the choices separated by a pipe (``|``) symbol (e.g. `` add_custom_command(TARGET targetname PRE_BUILD|PRE_LINK|POST_BUILD)``)
+- listing all the choices separated by a pipe (``|``) symbol (e.g. ``add_custom_command(TARGET targetname PRE_BUILD|PRE_LINK|POST_BUILD)``)
 - having completely different snippets (e.g. ``string()`` and ``file()`` commands)
 
 ## License
 
-The MIT license. See LICENSE.txt.
+CMakeSnippets is released under the [MIT license][opensource]. 
+
 
 
 ## Acknowledgements
 
-Many thanks to the author and contributors of the [InsertNums](https://github.com/jbrooksuk/InsertNums) package. I couldn't have done this without you.
+Many thanks to the author and contributors of the [InsertNums][insertnums] package. I couldn't have [done this][happynumbering] without you.
+
+
+[wbond]: http://wbond.net/sublime_packages/package_control
+[insertnums]: https://github.com/jbrooksuk/InsertNums
+[opensource]: http://www.opensource.org/licenses/MIT
+[happynumbering]: https://bitbucket.org/sevas/sublime_cmake_snippets/src/b827bbd909fc15d8fa956061fb517541d9a433b5/snippets/find_package_allopts.sublime-snippet?at=default
