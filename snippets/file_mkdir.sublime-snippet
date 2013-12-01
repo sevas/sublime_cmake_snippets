@@ -1,0 +1,8 @@
+
+
+<snippet>
+    <content><![CDATA[file(MAKE_DIRECTORY "${1:directory1}" "${2:directory2}")$0]]></content>
+    <tabTrigger>filemkdir</tabTrigger>
+    <description>CMake: file(MAKE_DIRECTORY ...)</description>
+    <scope>source.cmake</scope>
+</snippet>

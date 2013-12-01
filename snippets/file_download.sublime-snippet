@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[file(DOWNLOAD "${1:http://url}" "${2:file}"
+    TIMEOUT ${3:timeout} STATUS ${4:RESULT_VARIABLE}
+    LOG ${5:LOG_VARIABLE} ${6:SHOW_PROGRESS})$0]]></content>
+   <tabTrigger>filed</tabTrigger>
+   <description>CMake: file(DOWNLOAD ...)</description>
+   <scope>source.cmake</scope>
+</snippet>

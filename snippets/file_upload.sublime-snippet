@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[file(UPLOAD "${1:filename}" "${2:url}"
+    INACTIVITY_TIMEOUT {3:timeout}
+    TIMEOUT {4:timeout} STATUS {5:RESULT_VARIABLE}
+    LOG {6:LOG_VARIABLE} {7:SHOW_PROGRESS})$0]]></content>
+   <tabTrigger>file</tabTrigger>
+   <description>CMake: file()</description>
+   <scope>source.cmake</scope>
+</snippet>

@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[file(GLOB${1:_RECURSE} ${2:VAR} "${3:src/*.cc}")]]></content>
+  <content><![CDATA[file(GLOB${1:_RECURSE} ${2:VAR} "${3:src/*.cc}")$0]]></content>
   <tabTrigger>glob</tabTrigger>
   <description>CMake: file(GLOB ...)</description>
   <scope>source.cmake</scope>
