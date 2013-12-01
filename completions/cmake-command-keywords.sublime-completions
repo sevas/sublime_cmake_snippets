@@ -1,0 +1,340 @@
+{
+    "scope": "source.cmake",
+    "completions":
+    [
+        // Special names used in commands
+
+        // add_custom_target()
+        "ALL",
+        "COMMAND",
+        "WORKING_DIRECTORY",
+        "COMMENT",
+        "VERBATIM",
+        "SOURCES",
+
+        // add_executable()
+        "WIN32",
+        "MACOSX_BUNDLE",
+        "EXCLUDE_FROM_ALL",
+
+        // add_library()
+        "STATIC",
+        "SHARED",
+        "MODULE",
+
+        // cmake_host_system_information()
+        "NUMBER_OF_LOGICAL_CORES",
+        "NUMBER_OF_PHYSICAL_CORES",
+        "HOSTNAME",
+        "FQDN",
+        "TOTAL_VIRTUAL_MEMORY",
+        "AVAILABLE_VIRTUAL_MEMORY",
+        "TOTAL_PHYSICAL_MEMORY",
+        "AVAILABLE_PHYSICAL_MEMORY",
+
+        // cmake_minimum_required()
+        "VERSION",
+        "FATAL_ERROR",
+
+        // configure_file()
+        "COPYONLY",
+        "ESCAPE_QUOTES",
+        "@ONLY",
+        "NEWLINE_STYLE",
+        "UNIX",
+        "DOS",
+        "WIN32",
+        "LF",
+        "CRLF",
+
+        // create_test_sourcelist()
+        "EXTRA_INCLUDE ",
+        "FUNCTION",
+
+        // enable_language()
+        "C",
+        "CXX",
+        "Fortran",
+
+        // execute_process()
+        "TIMEOUT",
+        "RESULT_VARIABLE",
+        "OUTPUT_VARIABLE",
+        "ERROR_VARIABLE",
+        "INPUT_FILE",
+        "OUTPUT_FILE",
+        "ERROR_FILE",
+        "OUTPUT_QUIET",
+        "ERROR_QUIET",
+        "OUTPUT_STRIP_TRAILING_WHITESPACE",
+        "ERROR_STRIP_TRAILING_WHITESPACE",
+
+        // export()
+        "TARGETS",
+        "NAMESPACE",
+        "EXPORT_LINK_INTERFACE_LIBRARIES",
+
+        // file()
+        "WRITE",
+        "APPEND",
+        "READ",
+        "STRINGS",
+        "LIMIT_INPUT",
+        "LIMIT_COUNT",
+        "LIMIT_OUTPUT",
+        "LENGTH_MINIMUM",
+        "LENGTH_MAXIMUM",
+        "NEWLINE_CONSUME",
+        "REGEX",
+        "NO_HEX_CONVERSION",
+        "GLOB",
+        "RELATIVE",
+        "GLOB_RECURSE",
+        "FOLLOW_SYMLINKS",
+        "RENAME",
+        "REMOVE",
+        "REMOVE_RECURSIVE",
+        "MAKE_DIRECTORY",
+        "RELATIVE_PATH",
+        "TO_CMAKE_PATH",
+        "TO_NATIVE_PATH",
+        "DOWNLOAD",
+        "INACTIVITY_TIMEOUT",
+        "TIMEOUT",
+        "STATUS",
+        "LOG",
+        "SHOW_PROGRESS",
+        "EXPECTED_HASH",
+        "EXPECTED_MD5",
+        "TLS_VERIFY",
+        "TLS_CAINFO",
+        "UPLOAD",
+        "TIMESTAMP",
+        "UTC",
+        "GENERATE",
+        "OUTPUT",
+        "INPUT",
+        "CONTENT",
+        "CONDITION",
+        "COPY",
+        "INSTALL",
+        "DESTINATION",
+        "FILE_PERMISSIONS",
+        "DIRECTORY_PERMISSIONS",
+        "NO_SOURCE_PERMISSIONS",
+        "USE_SOURCE_PERMISSIONS",
+        "FILES_MATCHING",
+        "PATTERN",
+        "REGEX",
+        "EXCLUDE",
+        "PERMISSIONS",
+
+
+        // find_XXX()
+        "REQUIRED ",
+        "QUIET",
+        "EXACT",
+        "MODULE",
+        "HINTS",
+        "PATHS",
+        "COMPONENTS",
+        "OPTIONAL_COMPONENTS",
+        "NAMES",
+        "PATH_SUFFIXES",
+        "DOC",
+        "NO_POLICY_SCOPE",
+        "NO_DEFAULT_PATH",
+        "NO_CMAKE_ENVIRONMENT_PATH",
+        "NO_CMAKE_PACKAGE_REGISTRY",
+        "NO_CMAKE_BUILDS_PATH",
+        "NO_CMAKE_PATH",
+        "NO_SYSTEM_ENVIRONMENT_PATH",
+        "NO_CMAKE_SYSTEM_PATH",
+        "CMAKE_FIND_ROOT_PATH_BOTH",
+        "ONLY_CMAKE_FIND_ROOT_PATH",
+        "NO_CMAKE_SYSTEM_PACKAGE_REGISTRY",
+        "NO_CMAKE_FIND_ROOT_PATH",
+        "FIRST",
+        "LAST",
+        "ONLY",
+        "NEVER",
+        "CONFIG",
+        "NO_MODULE",
+
+        // get_property()
+        "GLOBAL",
+        "SOURCE",
+        "TEST",
+        "TARGET",
+        "VARIABLE",
+        "CACHE",
+        "DIRECTORY",
+        "SET",
+        "DEFINED",
+        "BRIEF_DOCS",
+        "FULL_DOCS",
+
+        // generator expressions
+        "CONFIG",
+        "CONFIGURATION",
+        "BOOL",
+        "STREQUAL",
+        "ANGLE-R",
+        "COMMA",
+        "SEMICOLON",
+        "JOIN",
+        "TARGET_NAME",
+        "INSTALL_INTERFACE",
+        "BUILD_INTERFACE",
+        "C_COMPILER_ID",
+        "CXX_COMPILER_ID",
+        "VERSION_GREATER",
+        "VERSION_LESS",
+        "VERSION_EQUAL",
+        "C_COMPILER_VERSION",
+        "CXX_COMPILER_VERSION",
+        "TARGET_FILE",
+        "TARGET_LINKER_FILE",
+        "TARGET_SONAME_FILE",
+        "TARGET_FILE_DIR",
+        "TARGET_LINKER_FILE_DIR",
+        "TARGET_SONAME_FILE_DIR",
+        "TARGET_PROPERTY",
+        "TARGET_POLICY",
+        "INSTALL_PREFIX",
+        "AND",
+        "OR",
+        "NOT",
+
+        // include()
+        "OPTIONAL",
+        "RESULT_VARIABLE",
+        "NO_POLICY_SCOPE",
+
+        // include_directories()
+        "AFTER",
+        "BEFORE",
+        "SYSTEM",
+
+        // include_external_msproject()
+        "TYPE",
+        "GUID",
+        "PLATFORM",
+
+        // install()
+        "CODE",
+        "EXPORT",
+        "DESTINATION",
+        "PERMISSIONS",
+        "NAMESPACE",
+        "FILE",
+        "PERMISSIONS",
+        "CONFIGURATIONS",
+        "EXPORT_LINK_INTERFACE_LIBRARIES",
+        "COMPONENT",
+        "TARGETS",
+        "ARCHIVE",
+        "LIBRARY",
+        "RUNTIME",
+        "FRAMEWORK",
+        "BUNDLE",
+        "PRIVATE_HEADER",
+        "PUBLIC_HEADER",
+        "RESOURCE",
+        "INCLUDES",
+        "NAMELINK_ONLY",
+        "NAMELINK_SKIP",
+        "SCRIPT",
+
+        // list()
+        "LENGTH",
+        "GET",
+        "APPEND",
+        "FIND",
+        "INSERT",
+        "REMOVE_ITEM",
+        "REMOVE_AT",
+        "REMOVE_DUPLICATES",
+        "REVERSE",
+        "SORT",
+
+        // load_cache()
+        "INCLUDE_INTERNALS",
+
+        // message()
+        "STATUS",
+        "WARNING",
+        "AUTHOR_WARNING",
+        "FATAL_ERROR",
+        "SEND_ERROR",
+
+        // math()
+        "EXPR",
+
+        // mark_as_advanced
+        "CLEAR",
+        "FORCE",
+        "VAR",
+
+        // separate_arguments()
+        "UNIX_COMMAND",
+        "WINDOWS_COMMAND",
+
+        // set()
+        "CACHE",
+        "FORCE",
+        "PARENT_SCOPE",
+
+        // set_directory_properties()
+        "PROPERTIES",
+
+        // set_property()
+        "APPEND_STRING",
+
+        // string()
+        "REGEX",
+        "MATCH",
+        "MATCHALL",
+        "REPLACE",
+        "MD5",
+        "SHA1",
+        "SHA224",
+        "SHA256",
+        "SHA384",
+        "SHA51",
+        "COMPARE",
+        "EQUAL",
+        "NOTEQUAL",
+        "LESS",
+        "GREATER",
+        "ASCII",
+        "CONFIGURE",
+        "TOUPPER",
+        "TOLOWER",
+        "SUBSTRING",
+        "STRIP",
+        "RANDOM",
+        "TIMESTAMP",
+        "MAKE_C_IDENTIFIER",
+
+        // target_*()
+        "INTERFACE",
+        "PRIVATE",
+        "PUBLIC",
+        "LINK_PRIVATE",
+        "LINK_PUBLIC",
+        "LINK_INTERFACE_LIBRARIES",
+        "debug",
+        "optimized",
+        "general",
+
+        // try_run()
+        "RUN_RESULT_VAR",
+        "COMPILE_RESULT_VAR",
+        "CMAKE_FLAGS",
+        "COMPILE_DEFINITIONS",
+        "COMPITE_OUTPUT_VARIABLE",
+        "RUN_OUTPUT_VARIABLE",
+        "ARGS"
+    ]
+}
