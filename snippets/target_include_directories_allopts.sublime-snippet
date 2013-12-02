@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[target_include_directories(${1:target} ${2:SYSTEM} ${3:BEFORE}
-    ${4:INTERFACE}${5:|PUBLIC}${6:|PRIVATE} ${7:items1}
-    ${8:INTERFACE}${9:|PUBLIC}${10:|PRIVATE} ${11:items2})$0]]></content>
+  ${4:INTERFACE}${5:|PUBLIC}${6:|PRIVATE} ${7:items1}
+  ${8:INTERFACE}${9:|PUBLIC}${10:|PRIVATE} ${11:items2})$0]]></content>
     <tabTrigger>targetincall</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: target_include_directories(...)</description>

@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[include_external_msproject(${1:projectname} "${2:location}"
-    ${3:TYPE} ${4:projectTypeGUID}
-    ${5:GUID} ${6:projectGUID}
-    ${7:PLATFORM} ${8:platform_name}
-    ${9:dep1} ${10:dep2})$0]]></content>
+  ${3:TYPE} ${4:projectTypeGUID}
+  ${5:GUID} ${6:projectGUID}
+  ${7:PLATFORM} ${8:platform_name}
+  ${9:dep1} ${10:dep2})$0]]></content>
     <tabTrigger>incms</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: include_external_msproject(...)</description>

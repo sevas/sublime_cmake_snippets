@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[if(NOT ${1:condition})
-	$0
+  $0
 endif()]]></content>
     <tabTrigger>ifnot</tabTrigger>
     <scope>source.cmake</scope>

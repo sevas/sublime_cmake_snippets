@@ -1,9 +1,9 @@
 
 <snippet>
     <content><![CDATA[create_test_sourcelist(${1:sourceListName} ${2:driverName}
-    "${3:testfile1} ${4:testfile2} ${5:testfile3}"
-    EXTRA_INCLUDE "${6:include.h}"
-    FUNCTION ${7:function})$0]]></content>
+  "${3:testfile1} ${4:testfile2} ${5:testfile3}"
+  EXTRA_INCLUDE "${6:include.h}"
+  FUNCTION ${7:function})$0]]></content>
     <tabTrigger>createts</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: create_test_sourcelist(...)</description>

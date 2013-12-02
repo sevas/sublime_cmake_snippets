@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[set_target_properties(${1:target1} ${2:target2}
-    PROPERTIES
-    ${3:prop1} ${4:value1}
-    ${5:prop2} ${6:value2})$0]]></content>
+  PROPERTIES
+  ${3:prop1} ${4:value1}
+  ${5:prop2} ${6:value2})$0]]></content>
     <tabTrigger>settp</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: set_target_properties(files)</description>

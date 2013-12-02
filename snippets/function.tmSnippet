@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>function(${1:FUNCTION_NAME}${2/(.+)/(?1: )/}${2:arg1})
-	$0
+  $0
 endfunction()</string>
 	<key>name</key>
 	<string>Function … EndFunction</string>

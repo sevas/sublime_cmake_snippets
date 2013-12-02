@@ -1,9 +1,9 @@
 
 <snippet>
     <content><![CDATA[install(TARGETS ${1:target}
-        RUNTIME DESTINATION "${2:bin}"
-        LIBRARY DESTINATION "${3:lib}"
-        ARCHIVE DESTINATION "${4:lib/static}")$0]]></content>
+  RUNTIME DESTINATION "${2:bin}"
+  LIBRARY DESTINATION "${3:lib}"
+  ARCHIVE DESTINATION "${4:lib/static}")$0]]></content>
     <tabTrigger>instp</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: install(TARGETS ...)</description>

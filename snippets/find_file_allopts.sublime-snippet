@@ -1,16 +1,16 @@
 <snippet>
     <content><![CDATA[find_file(${1:RESULT_VARIABLE}
-    NAMES "${2:name1}" "${3:name2}"
-    ${4:HINTS} "${5:path1}" "${6:path2}" ENV ${7:VAR}
-    ${8:PATHS} "${9:path1}" "${10:path2}" ENV ${11:VAR}
-    ${12:PATH_SUFFIXES} "${13:suffix1}" "${14:suffix2}"
-    ${15:DOC} "${16:cache documentation string}"
-    ${17:NO_DEFAULT_PATH}
-    ${18:NO_CMAKE_ENVIRONMENT_PATH}
-    ${19:NO_CMAKE_PATH}
-    ${20:NO_SYSTEM_ENVIRONMENT_PATH}
-    ${21:NO_CMAKE_SYSTEM_PATH}
-    ${22:CMAKE_FIND_ROOT_PATH_BOTH} ${23:| ONLY_CMAKE_FIND_ROOT_PATH }${24:| NO_CMAKE_FIND_ROOT_PATH})$0]]></content>
+  NAMES "${2:name1}" "${3:name2}"
+  ${4:HINTS} "${5:path1}" "${6:path2}" ENV ${7:VAR}
+  ${8:PATHS} "${9:path1}" "${10:path2}" ENV ${11:VAR}
+  ${12:PATH_SUFFIXES} "${13:suffix1}" "${14:suffix2}"
+  ${15:DOC} "${16:cache documentation string}"
+  ${17:NO_DEFAULT_PATH}
+  ${18:NO_CMAKE_ENVIRONMENT_PATH}
+  ${19:NO_CMAKE_PATH}
+  ${20:NO_SYSTEM_ENVIRONMENT_PATH}
+  ${21:NO_CMAKE_SYSTEM_PATH}
+  ${22:CMAKE_FIND_ROOT_PATH_BOTH} ${23:| ONLY_CMAKE_FIND_ROOT_PATH }${24:| NO_CMAKE_FIND_ROOT_PATH})$0]]></content>
     <tabTrigger>findfall</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: find_file(...)</description>

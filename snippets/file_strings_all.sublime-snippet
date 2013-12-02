@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[file(STRINGS "${1:filename}" ${2:RESULT_VARIABLE} LIMIT_COUNT ${3:num}
-   LIMIT_INPUT ${4:numBytes} LIMIT_OUTPUT ${5:numBytes}
-   LENGTH_MINIMUM ${6:numBytes} LENGTH_MAXIMUM ${7:numBytes}
-   ${8:NEWLINE_CONSUME} REGEX ${9:".*"}
-   ${10:NO_HEX_CONVERSION})$0]]></content>
+  LIMIT_INPUT ${4:numBytes} LIMIT_OUTPUT ${5:numBytes}
+  LENGTH_MINIMUM ${6:numBytes} LENGTH_MAXIMUM ${7:numBytes}
+  ${8:NEWLINE_CONSUME} REGEX ${9:".*"}
+  ${10:NO_HEX_CONVERSION})$0]]></content>
    <tabTrigger>filestrall</tabTrigger>
    <description>CMake: file(STRINGS ...)</description>
    <scope>source.cmake</scope>

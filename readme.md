@@ -69,7 +69,7 @@ The main problem comes from the limited width of Sublime Text 2's suggestion box
 A complete list of snippets is available from the Command Palette. Open the palette, type ``CMake`` to filter the CMake snippets, and type the beginning of a command to filter out only the snippets for that command. 
 
 
-## Choices
+## Design choices
 
 ### Reasonable defaults
 
@@ -131,6 +131,10 @@ Choices between incompatible parameters are either indicated by
 
 - listing all the choices separated by a pipe (``|``) symbol (e.g. ``add_custom_command(TARGET targetname PRE_BUILD|PRE_LINK|POST_BUILD)``)
 - having completely different snippets (e.g. ``string()`` and ``file()`` commands)
+
+### Two spaces per indentation level
+
+Don't email me.
 
 ## License
 

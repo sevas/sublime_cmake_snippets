@@ -1,23 +1,23 @@
 <snippet>
     <content><![CDATA[find_package(${1:package} ${2:version} ${3:EXACT} ${4:QUIET}
-    ${3:REQUIRED} ${4:COMPONENTS} ${5:components}
-    ${6:OPTIONAL_COMPONENTS} ${7:components}
-    ${8:NO_POLICY_SCOPE}
-    ${9:NAMES} ${10:name1} ${11:name2}
-    ${12:CONFIGS} ${13:config1} ${14:config2}
-    ${15:HINTS} "${16:path1}" "${17:path2}"
-    ${18:PATHS} "${19:path1}" "${20:path2}"
-    ${21:PATH_SUFFIXES} "${22:suffix1}" "${23:suffix2}"
-    ${24:DOC} "${25:cache documentation string}"
-    ${26:NO_DEFAULT_PATH}
-    ${27:NO_CMAKE_ENVIRONMENT_PATH}
-    ${28:NO_CMAKE_PATH}
-    ${29:NO_SYSTEM_ENVIRONMENT_PATH}
-    ${30:NO_CMAKE_PACKAGE_REGISTRY}
-    ${31:NO_CMAKE_BUILDS_PATH}
-    ${32:NO_CMAKE_SYSTEM_PATH}
-    ${33:NO_CMAKE_SYSTEM_PACKAGE_REGISTRY}
-    ${34:CMAKE_FIND_ROOT_PATH_BOTH} ${35:| ONLY_CMAKE_FIND_ROOT_PATH }${36:| NO_CMAKE_FIND_ROOT_PATH})$0]]></content>
+  ${3:REQUIRED} ${4:COMPONENTS} ${5:components}
+  ${6:OPTIONAL_COMPONENTS} ${7:components}
+  ${8:NO_POLICY_SCOPE}
+  ${9:NAMES} ${10:name1} ${11:name2}
+  ${12:CONFIGS} ${13:config1} ${14:config2}
+  ${15:HINTS} "${16:path1}" "${17:path2}"
+  ${18:PATHS} "${19:path1}" "${20:path2}"
+  ${21:PATH_SUFFIXES} "${22:suffix1}" "${23:suffix2}"
+  ${24:DOC} "${25:cache documentation string}"
+  ${26:NO_DEFAULT_PATH}
+  ${27:NO_CMAKE_ENVIRONMENT_PATH}
+  ${28:NO_CMAKE_PATH}
+  ${29:NO_SYSTEM_ENVIRONMENT_PATH}
+  ${30:NO_CMAKE_PACKAGE_REGISTRY}
+  ${31:NO_CMAKE_BUILDS_PATH}
+  ${32:NO_CMAKE_SYSTEM_PATH}
+  ${33:NO_CMAKE_SYSTEM_PACKAGE_REGISTRY}
+  ${34:CMAKE_FIND_ROOT_PATH_BOTH} ${35:| ONLY_CMAKE_FIND_ROOT_PATH }${36:| NO_CMAKE_FIND_ROOT_PATH})$0]]></content>
     <tabTrigger>findpackall</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: find_package(...)</description>

@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[load_cache("${1:path/to/cache_file}"
-    ${2:EXCLUDE} ${3:entry1} ${4:entry2}
-    ${5:INCLUDE_INTERNALS} ${6:entry1} ${7:entry2})$0]]></content>
+  ${2:EXCLUDE} ${3:entry1} ${4:entry2}
+  ${5:INCLUDE_INTERNALS} ${6:entry1} ${7:entry2})$0]]></content>
     <tabTrigger>loadcache</tabTrigger>
     <scope>source.cmake</scope>
     <description>CMake: load_cache(cache_file)</description>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[macro(${1:MACRO_NAME}${2/(.+)/(?1: )/}${2:arg1})
-	$0
+  $0
 endmacro()]]></content>
     <tabTrigger>mac</tabTrigger>
     <scope>source.cmake</scope>
