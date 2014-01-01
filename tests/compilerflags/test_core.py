@@ -32,3 +32,21 @@ def test_find_completions_positional_args():
     eq_(len(found_completions), 1)
     expected_candidate = ('-F', '[clang] -F Add directory to framework include search path', '-F ${1:value}')
     eq_(expected_candidate, found_completions[0])
+
+
+def test_find_completions_inside_cmake_command():
+    cmake_line = 'set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -MG")'
+    # simulate the user cursor pos just after '-MG'
+    cursor_pos = len(cmake_line) - 2
+    found_completions = find_completions('clang', MOCK_CLANG_FLAGS_DB, cmake_line, cursor_pos=cursor_pos)
+    eq_(len(found_completions), 1)
+    expected_candidate = ('-MG', '[clang] -MG Add missing headers to dependency list', '-MG')
+    eq_(expected_candidate, found_completions[0])
+
+
+def test_find_completions_outside_cmake_command():
+    cmake_line = 'set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -MG")'
+    # simulate the user cursor pos at the end of the line
+    cursor_pos = len(cmake_line)
+    found_completions = find_completions('clang', MOCK_CLANG_FLAGS_DB, cmake_line, cursor_pos=cursor_pos)
+    eq_(len(found_completions), 0)

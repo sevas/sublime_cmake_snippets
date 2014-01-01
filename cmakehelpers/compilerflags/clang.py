@@ -3,8 +3,10 @@ import subprocess
 from .core import CompilerFlag, get_candidate_flag_prefix
 
 
-def filter_header(clang_help):
-    return clang_help[6:]
+def filter_options_lines(clang_help):
+    # remove the header and the blank lines
+    header_lines_count = 6
+    return [x for x in clang_help[header_lines_count:] if x]
 
 
 def extract_flag_template(flag_string):
@@ -64,8 +66,7 @@ def parse_compiler_flags(clang_help_output):
         Values of CompilerFlag instances
 
     """
-    clang_flags = filter_header(clang_help_output.split('\n'))
-
+    clang_flags = filter_options_lines(clang_help_output.split('\n'))
     compiler_flags = list()
     idx = 0
     line_count = len(clang_flags)
@@ -94,7 +95,7 @@ def parse_compiler_flags(clang_help_output):
     return dict(compiler_flags)
 
 
-def make_compiler_flags_database(clang_executable='clang'):
+def make_compiler_options_database(clang_executable='clang'):
     p = subprocess.Popen([clang_executable, '-cc1', '--help'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, _ = p.communicate()
 
