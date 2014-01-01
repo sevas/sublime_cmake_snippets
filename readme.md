@@ -1,6 +1,13 @@
 
 # CMakeSnippets for Sublime Text 2/3 
 
+## Build status
+
+[![Build Status (master)](https://travis-ci.org/sevas/sublime_cmake_snippets.png?branch=master)](https://travis-ci.org/sevas/sublime_cmake_snippets) (master)
+
+[![Build Status (stable)](https://travis-ci.org/sevas/sublime_cmake_snippets.png?branch=git/stable)](https://travis-ci.org/sevas/sublime_cmake_snippets) (stable)
+
+
 ## What is this?
 
 An attempt to ruin the sheer joy of going back and forth hundred times a week between my text editor and the [online CMake documentation](http://www.cmake.org/cmake/help/v2.8.12/cmake.htm).
