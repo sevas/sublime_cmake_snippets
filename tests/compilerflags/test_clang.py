@@ -1,4 +1,4 @@
-from nose.tools import eq_
+from nose.tools import eq_, nottest
 
 from cmakehelpers.compilerflags.core import CompilerFlag
 from cmakehelpers.compilerflags import clang
@@ -29,7 +29,7 @@ EXPECTED_COMPILER_FLAGS = {
     '-analyzer-constraints':            CompilerFlag(description='Source Code Analysis - Symbolic Constraint Engines', replace_with='-analyzer-constraints ${1:value}')
 }
 
-
+@nottest
 def test_parse_compiler_flags():
     compiler_flags = clang.parse_compiler_flags(SAMPLE_CLANG_OUTPUT)
     eq_(len(EXPECTED_COMPILER_FLAGS), len(compiler_flags))

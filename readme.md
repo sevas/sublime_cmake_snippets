@@ -1,4 +1,9 @@
 
+
+[![Build Status (master)](https://travis-ci.org/sevas/sublime_cmake_snippets.png?branch=master)](https://travis-ci.org/sevas/sublime_cmake_snippets)
+[![Build Status (development)](https://travis-ci.org/sevas/sublime_cmake_snippets.png?branch=git/development)](https://travis-ci.org/sevas/sublime_cmake_snippets)
+
+
 # CMakeSnippets for Sublime Text 2/3 
 
 ## What is this?
