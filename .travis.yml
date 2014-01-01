@@ -2,7 +2,8 @@ language: python
 branches:
   only:
     - master
-    - git/development
+    - default
+    - .*stable.*
 python:
     - "2.7"
     - "3.3"
