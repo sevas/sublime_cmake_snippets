@@ -5,6 +5,7 @@ branches:
     - default
     - .*stable.*
 python:
+    - "2.6"
     - "2.7"
     - "3.3"
 install:
