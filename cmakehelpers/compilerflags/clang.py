@@ -1,6 +1,6 @@
 
 import subprocess
-from core import CompilerFlag, get_candidate_flag_prefix
+from .core import CompilerFlag, get_candidate_flag_prefix
 
 
 def filter_header(clang_help):
