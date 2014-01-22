@@ -69,9 +69,9 @@ def find_completions(compiler_name, compiler_flags, line, cursor_pos=None):
 
 def convert_compilerflags_to_dicts(flags_database):
     """
-
+    >>> from pprint import pprint
     >>> d = dict(foo=CompilerFlag(description='foo', replace_with='foo'))
-    >>> convert_compilerflags_to_dicts(d)
+    >>> pprint(convert_compilerflags_to_dicts(d))
     {'foo': {'description': 'foo', 'replace_with': 'foo'}}
     """
     out = dict()
@@ -83,9 +83,9 @@ def convert_compilerflags_to_dicts(flags_database):
 
 def convert_dicts_to_compilerflags(flags_database):
     """
-
+    >>> from pprint import pprint
     >>> d = {'foo': {'description': 'foo', 'replace_with': 'foo'}}
-    >>> convert_dicts_to_compilerflags(d)
+    >>> pprint(convert_dicts_to_compilerflags(d))
     {'foo': CompilerFlag(description='foo', replace_with='foo')}
 
     """
