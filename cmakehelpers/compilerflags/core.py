@@ -67,6 +67,33 @@ def find_completions(compiler_name, compiler_flags, line, cursor_pos=None):
         return []
 
 
+def convert_compilerflags_to_dicts(flags_database):
+    """
+
+    >>> d = dict(foo=CompilerFlag(description='foo', replace_with='foo'))
+    >>> convert_compilerflags_to_dicts(d)
+    {'foo': {'description': 'foo', 'replace_with': 'foo'}}
+    """
+    out = dict()
+
+    for k, v in flags_database.iteritems():
+        out[k] = dict(v._asdict())
+    return out
+
+
+def convert_dicts_to_compilerflags(flags_database):
+    """
+
+    >>> d = {'foo': {'description': 'foo', 'replace_with': 'foo'}}
+    >>> convert_dicts_to_compilerflags(d)
+    {'foo': CompilerFlag(description='foo', replace_with='foo')}
+
+    """
+    out = dict()
+    for k, v in flags_database.iteritems():
+        out[k] = CompilerFlag(**v)
+    return out
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod(verbose=True)

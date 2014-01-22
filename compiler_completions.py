@@ -17,7 +17,7 @@ def load_completion_databases():
     global COMPLETION_DATABASES
     for compiler_name, database_info in COMPLETION_DATABASES.iteritems():
         loader = database_info['loader']
-        completion_database = loader.make_compiler_options_database()
+        completion_database = loader.load_compiler_options_database()
         log_message("Loading {0} options database: {1} entries".format(compiler_name, len(completion_database)))
         database_info['database'] = completion_database
 

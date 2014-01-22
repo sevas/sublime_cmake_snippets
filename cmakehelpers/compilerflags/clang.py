@@ -1,6 +1,10 @@
 
+import os
+import glob
+import json
 import subprocess
-from .core import CompilerFlag, get_candidate_flag_prefix
+
+from .core import CompilerFlag, convert_compilerflags_to_dicts, convert_dicts_to_compilerflags
 
 
 def filter_options_lines(clang_help):
@@ -95,15 +99,53 @@ def parse_compiler_flags(clang_help_output):
     return dict(compiler_flags)
 
 
-def make_compiler_options_database(clang_executable='clang'):
-    p = subprocess.Popen([clang_executable, '-cc1', '--help'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out, _ = p.communicate()
+def get_command_output(cmd, expected_returncode):
+    p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = p.communicate()
 
-    if p.returncode != 1:
-        raise ValueError('hello')
+    if p.returncode != expected_returncode:
+        print out
+        print err
+        raise ValueError('Something went wrong')
 
-    clang_flags = parse_compiler_flags(out)
-    return clang_flags
+    return out
+
+
+
+def make_compiler_options_database(cc_executable='clang'):
+
+    clang_help_output = get_command_output([cc_executable, '-cc1', '--help'], expected_returncode=1)
+    clang_flags = parse_compiler_flags(clang_help_output)
+
+    clang_version_output = get_command_output([cc_executable, '-dumpversion'], expected_returncode=0)
+
+    return clang_flags, clang_version_output.strip()
+
+
+def save_compiler_options_database(data_dir, clang_flags, clang_version):
+    database_fpath = os.path.join(data_dir, "clang_{}.json".format(clang_version))
+
+    with open(database_fpath, 'w') as f:
+        json.dump(convert_compilerflags_to_dicts(clang_flags), f, indent=2)
+
+
+def load_compiler_options_database(clang_executable='clang'):
+    current_dir = os.path.dirname(__file__)
+    data_dir = os.path.join(current_dir, "data")
+    database_file_pattern = os.path.join(data_dir, "clang*.json")
+    candidate_databases = glob.glob(database_file_pattern)
+
+    if not candidate_databases:
+        clang_flags, clang_version = make_compiler_options_database(clang_executable)
+        save_compiler_options_database(data_dir, clang_flags, clang_version)
+
+        return clang_flags
+    else:
+        database_fpath = candidate_databases[0]
+        with open(database_fpath) as f:
+            content = json.load(f)
+            return convert_dicts_to_compilerflags(content)
+
 
 if __name__ == '__main__':
     import doctest
