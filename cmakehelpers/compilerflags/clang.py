@@ -104,8 +104,8 @@ def get_command_output(cmd, expected_returncode):
     out, err = p.communicate()
 
     if p.returncode != expected_returncode:
-        print out
-        print err
+        print(out)
+        print(err)
         raise ValueError('Something went wrong')
 
     return out

@@ -76,7 +76,7 @@ def convert_compilerflags_to_dicts(flags_database):
     """
     out = dict()
 
-    for k, v in flags_database.iteritems():
+    for k, v in flags_database.items():
         out[k] = dict(v._asdict())
     return out
 
@@ -90,7 +90,7 @@ def convert_dicts_to_compilerflags(flags_database):
 
     """
     out = dict()
-    for k, v in flags_database.iteritems():
+    for k, v in flags_database.items():
         out[k] = CompilerFlag(**v)
     return out
 
